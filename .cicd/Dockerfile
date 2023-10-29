@@ -11,7 +11,7 @@ RUN ls -la
 COPY ["${JAR_SOURCE}", "/opt/i27/i27cart-product.jar"]
 # JAR_SOURCE will be passed during the docker build command
 RUN chmod 777 /opt/i27
-EXPOSE 8761
+EXPOSE 8132
 USER root
 CMD ["java", "-jar", "/opt/i27/i27cart-product.jar"]
 

@@ -150,7 +150,8 @@ pipeline {
             steps {
                script {
                 imageValidation().call()
-                dockerDeploy('dev', '5761', '8761').call()
+                //dockerDeploy('dev', '5761', '8761').call()
+                dockerDeploy('dev', '5132', '8132').call()
                }
                
                 
@@ -168,7 +169,7 @@ pipeline {
             steps {
                 script {
                     imageValidation().call()
-                    dockerDeploy ('Test', '6761', '8761').call()
+                    dockerDeploy ('Test', '6132', '8132').call()
                 }
             }
         }
@@ -184,7 +185,7 @@ pipeline {
             steps {
                 script {
                     imageValidation().call()
-                    dockerDeploy ('Stage', '7761', '8761').call()
+                    dockerDeploy ('Stage', '7132', '8132').call()
                 }
             }
         }
@@ -209,7 +210,7 @@ pipeline {
                 
                 script {
                     imageValidation().call()
-                    dockerDeploy ('Prod', '8761', '8761').call()
+                    dockerDeploy ('Prod', '8132', '8132').call()
                 }
             }
         }
@@ -310,7 +311,15 @@ def dockerBuildandPush(){
 // 8761 is the container port, we cant change it.
 // if we really want to change it, we can by using -Dserver.port=9090, this will be your container port
 // but we are considering the below host ports
+// For Eureka 
 // dev ===> 5761
 // test ===> 6761
 // stage ===> 7761
 // prod ===> 8761
+
+// For Product, container port is 8132
+// dev ===> 5132
+// test ===> 6132
+// stage ===> 7132
+// prod ===> 8132
+
