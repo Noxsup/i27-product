@@ -323,3 +323,8 @@ def dockerBuildandPush(){
 // stage ===> 7132
 // prod ===> 8132
 
+// when u stop docker-dev instance on aws, always run the below commands first 
+// sudo usermod -aG docker maha
+// sudo service docker restart
+
+// above commands give permissions for docker daemon 

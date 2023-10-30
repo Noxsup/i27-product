@@ -48,7 +48,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://3.84.60.85/:5761/eureka/
+      defaultZone: http://3.84.60.85:5761/eureka/
 ---
 
 
