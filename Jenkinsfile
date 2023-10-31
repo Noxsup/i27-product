@@ -328,3 +328,6 @@ def dockerBuildandPush(){
 // sudo service docker restart
 
 // above commands give permissions for docker daemon 
+
+
+// docker rmi $(docker images -q) -f to purge all docker images while listing
