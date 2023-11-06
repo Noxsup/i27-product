@@ -35,7 +35,7 @@ spring:
     #    password: ****
     #    url
     password: sk619
-    url: jdbc:mysql://34.29.2.189/learnerCrownClothing?useSSL=FALSE
+    url: jdbc:mysql://35.184.80.147/learnerCrownClothing?useSSL=FALSE
     username: root
   jpa:
     hibernate:
@@ -48,7 +48,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://34.227.105.230:5761/
+      defaultZone: http://3.95.148.72:5761/
 
 
 
