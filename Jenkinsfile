@@ -151,7 +151,7 @@ pipeline {
                script {
                 imageValidation().call()
                 //dockerDeploy('dev', '5761', '8761').call()
-                dockerDeploy('dev', '5132', '8132').call()
+                dockerDeploy('dev', '5232', '8132').call()
                }
                
                 
