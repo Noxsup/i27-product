@@ -35,7 +35,7 @@ spring:
     #    password: ****
     #    url
     password: sk619
-    url: jdbc:mysql://34.31.4.197:3306/learnerCrownClothing?useSSL=FALSE
+    url: jdbc:mysql://34.121.136.199:3306/learnerCrownClothing?useSSL=FALSE
     username: root
   jpa:
     hibernate:
